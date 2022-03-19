@@ -5,7 +5,7 @@ import {loginUser} from 'actions/authActions';
 const Login = props => {
   const dispatch = useDispatch();
   const userDetails = useSelector(state => state);
-  console.log('COPPPPP', userDetails);
+
   useEffect(() => {
     dispatch(loginUser());
   }, []);
